@@ -1,0 +1,162 @@
+.vote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.vote h4.user-story {
+  display: grid;
+  background-color: #8bc34a;
+}
+.vote .vote-booth {
+  display: grid;
+  grid-template-rows: 2fr auto;
+  row-gap: 10px;
+}
+.vote .vote-booth .issue {
+  display: grid;
+  grid-row: 1;
+}
+.vote .vote-booth .comments {
+  display: grid;
+  grid-row: 2;
+  background-color: #424242;
+  padding: 10px;
+}
+.vote .vote-booth .comments ul {
+  list-style-type: none;
+  background-color: white;
+  color: #212121;
+}
+.vote .vote-booth .comments ul li {
+  margin: 10px;
+}
+.vote .vote-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+}
+.vote .vote-actions .information {
+  display: grid;
+  row-gap: 20px;
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+  justify-items: stretch;
+  text-align: center;
+}
+.vote .vote-actions .information .vote-button {
+  border-radius: 4px;
+  color: #FEFEFE;
+  background-color: #f44336;
+  cursor: pointer;
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: 1fr;
+  align-items: center;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 3px 3px 3px rgba(27, 27, 27, 0.2);
+}
+.vote .vote-actions .information .epic-button {
+  border-radius: 4px;
+  color: #FEFEFE;
+  background-color: #9c27b0;
+  cursor: pointer;
+  display: grid;
+  font-size: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.vote .vote-actions .information .reporter-button {
+  border-radius: 4px;
+  color: #FEFEFE;
+  background-color: #cddc39;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.vote .vote-actions .information .last-five {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #424242;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+.vote .vote-actions .information .last-five .last-five-vote {
+  font-size: large;
+  display: grid;
+  grid-column-start: 1;
+  justify-content: left;
+}
+.vote .vote-actions .information .last-five .last-five-key {
+  display: grid;
+  justify-content: right;
+  grid-column-start: 2;
+  grid-template-columns: repeat(2);
+}
+.vote .vote-actions .information .last-five .last-five-key span.bug {
+  border-radius: 4px;
+  display: inline-flex;
+  grid-column: 2;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.vote .vote-actions .information .last-five .last-five-key span.bug mat-icon {
+  color: #f44336;
+}
+.vote .vote-actions .information .last-five .last-five-key span.user-story {
+  border-radius: 4px;
+  display: inline-flex;
+  grid-column: 2;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.vote .vote-actions .information .last-five .last-five-key span.user-story mat-icon {
+  color: #8bc34a;
+}
+.vote .vote-actions .players {
+  display: grid;
+  gap: 20px;
+  row-gap: 20px;
+  align-content: stretch;
+  overflow-y: auto;
+}
+.vote .vote-actions .players .details {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  width: 1fr;
+  min-height: 60px;
+  max-height: 80px;
+  background-color: #424242;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  max-height: 100vh;
+  border-radius: 4px;
+}
+.vote .vote-actions .players .details .user-vote {
+  font-size: 3em;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-row: 1;
+}
+.vote .vote-actions .players .details .user-name {
+  color: slategrey;
+  display: grid;
+  grid-row: 2;
+}
